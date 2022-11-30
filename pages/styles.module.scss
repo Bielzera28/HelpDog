@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    gap: 80px;
+    margin: 50px 300px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #3c184e;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .centerText {
+        font-size: 90px;
+        font-weight: 900;
+        color: #3c184e;
+        max-width: 700px;
+        margin-top: 150px;
+    }
+
+    .subText {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 30px 0px 50px;
+    }
+
+    .btnList {
+        display: flex;
+        gap: 30px;
+
+        .button {
+            background: #713fff;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            color: #FFF;
+            border-style: none;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 16px 50px;
+        }
+
+        .contact {
+            background: none;
+            border-style: none;
+            cursor: pointer;
+            font-size: 17px;
+            color: #3c184e;
+        }
+    }
+
+    .dog {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+
+        .food {
+            position: absolute;
+        }
+    }
+
+
+}
