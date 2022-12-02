@@ -20,6 +20,7 @@ import InputAdornment from "./components/InputAdornment/InputAdornment";
 import HappyDog from "../public/images/payDog.png";
 import Brasil from "../public/images/br.png";
 import EUA from "../public/images/en.png";
+import Racao from "../public/images/racao.png";
 
 export default function Home() {
   const [modalSuccessOpened, setModalSuccessOpened] = useState(false);
@@ -78,7 +79,9 @@ export default function Home() {
           </div>
           <div className={styles.dog}>
             <Image alt="cachorro" src={Dog} />
-            <div className={styles.food}></div>
+            <div className={styles.food}>
+              <Image alt="Ração" src={Racao} />
+            </div>
           </div>
         </div>
       </div>
