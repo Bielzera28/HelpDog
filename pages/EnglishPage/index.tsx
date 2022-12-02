@@ -11,7 +11,6 @@ import Pin from "../components/Pin/Pin";
 import Gmail from "../components/Gmail/Gmail";
 import Telefone from "../components/Telefone/telefone";
 import CheckIcon from "../components/CheckIcon/CheckIcon";
-import Link from "../components/Link/link";
 import Button from "../components/Button/Button";
 import EditIcon from "@mui/icons-material/Edit";
 import TextField from "../components/TextField/TextField";
@@ -70,12 +69,12 @@ export default function Home() {
         </div>
         <div>
           <div className={styles.content}>
-            <Link href={`../`}>
+            <a href={`../`}>
               <Image alt="Brasil" src={Brasil} width={60} />
-            </Link>
-            <Link href="#">
+            </a>
+            <a href="#">
               <Image alt="Estados Unidos" src={EUA} width={41} />
-            </Link>
+            </a>
           </div>
           <div className={styles.dog}>
             <Image alt="cachorro" src={Dog} />
