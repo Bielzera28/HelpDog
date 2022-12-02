@@ -1,0 +1,45 @@
+.inputAdornmentRoot {
+  padding: 28px 13px !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+
+  &.inputAdornmentStart {
+    background-color: #f7f7f7;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &.inputAdornmentEnd {
+    background-color: #f7f7f7;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+}
+
+.sizeSmall {
+  padding: 21px 13px !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+
+  &.inputAdornmentStart {
+    background-color: #f7f7f7;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &.inputAdornmentEnd {
+    background-color: #f7f7f7;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+}

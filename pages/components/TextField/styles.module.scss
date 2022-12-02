@@ -1,0 +1,17 @@
+.container {
+  .textFieldRoot {
+    input {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    div {
+      padding-right: 0;
+      padding-left: 0;
+      color: #2e2e2e;
+      border-radius: 8px;
+    }
+    .sizeSmall {
+      padding: 10px;
+    }
+  }
+}

@@ -1,25 +1,25 @@
 import styles from "./styles.module.scss";
-import Logo from "./assents/logo";
-import Vector from "./assents/vector";
+import Logo from "../assents/logo";
+import Vector from "../assents/vector";
 import Image from "next/image";
-import Dog from "../public/images/dog.jpg";
+import Dog from "../../public/images/dog.jpg";
 import Head from "next/head";
 import { useState } from "react";
-import Modal from "./components/Modal/modal";
-import Text from "./components/Text/Text";
-import Pin from "./components/Pin/Pin";
-import Gmail from "./components/Gmail/Gmail";
-import Telefone from "./components/Telefone/telefone";
-import CheckIcon from "./components/CheckIcon/CheckIcon";
-import Link from "./components/Link/link";
-import Button from "./components/Button/Button";
+import Modal from "../components/Modal/modal";
+import Text from "../components/Text/Text";
+import Pin from "../components/Pin/Pin";
+import Gmail from "../components/Gmail/Gmail";
+import Telefone from "../components/Telefone/telefone";
+import CheckIcon from "../components/CheckIcon/CheckIcon";
+import Link from "../components/Link/link";
+import Button from "../components/Button/Button";
 import EditIcon from "@mui/icons-material/Edit";
-import TextField from "./components/TextField/TextField";
+import TextField from "../components/TextField/TextField";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import InputAdornment from "./components/InputAdornment/InputAdornment";
-import HappyDog from "../public/images/payDog.png";
-import Brasil from "../public/images/br.png";
-import EUA from "../public/images/en.png";
+import InputAdornment from "../components/InputAdornment/InputAdornment";
+import HappyDog from "../../public/images/payDog.png";
+import Brasil from "../../public/images/br.png";
+import EUA from "../../public/images/en.png";
 
 export default function Home() {
   const [modalSuccessOpened, setModalSuccessOpened] = useState(false);
@@ -50,29 +50,29 @@ export default function Home() {
           </div>
 
           <div>
-            <div className={styles.centerText}>Ajude quem precisa de ajuda</div>
+            <div className={styles.centerText}>Help those who need help</div>
             <Vector />
           </div>
 
           <div className={styles.subText}>
-            Com apenas 1 real você pode me ajudar a alimentar cães de ruas.
+            With just 1 real you can help me feed stray dogs.
           </div>
 
           <div className={styles.btnList}>
             <Button className={styles.button} onClick={handleSubmit}>
-              Contribuir
+              Contribute
             </Button>
             <Button className={styles.contact} onClick={handSubmit}>
-              Entrar em contato
+              Talk to us
             </Button>
           </div>
         </div>
         <div>
           <div className={styles.content}>
-            <Link href="#">
+            <Link href={`../`}>
               <Image alt="Brasil" src={Brasil} width={60} />
             </Link>
-            <Link href={`/EnglishPage`}>
+            <Link href="#">
               <Image alt="Estados Unidos" src={EUA} width={41} />
             </Link>
           </div>
@@ -90,24 +90,24 @@ export default function Home() {
         <div className={styles.formModal}>
           <div className={styles.formTitle}>
             <EditIcon />
-            <h1>Formulário de Contribuição</h1>
+            <h1>Contribution Form</h1>
           </div>
           <div className={styles.form}>
             <div className={styles.formFormat}>
-              <TextField topLabel="Nome :" size="small" />
-              <TextField topLabel="Sobrenome :" size="small" />
+              <TextField topLabel="Name :" size="small" />
+              <TextField topLabel="Last name :" size="small" />
             </div>
             <div className={styles.formFormat}>
-              <TextField topLabel="Endereço :" size="small" />
+              <TextField topLabel="Address :" size="small" />
               <TextField topLabel="CEP :" size="small" maxWidth={150} />
             </div>
             <div className={styles.formFormat}>
-              <TextField topLabel="Telefone Fixo :" size="small" />
-              <TextField topLabel="Telefone Celular :" size="small" />
+              <TextField topLabel="Landline :" size="small" />
+              <TextField topLabel="Cell phone :" size="small" />
             </div>
             <div className={styles.formPay}>
               <TextField
-                topLabel="Valor a ser doado :"
+                topLabel="Amount to be donated :"
                 size="small"
                 InputProps={{
                   startAdornment: (
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
             <div className={styles.finalModal}>
               <Button className={styles.btnModal} onClick={finalSubmit}>
-                Finalizar
+                Finalize
               </Button>
               <Logo />
             </div>
@@ -132,18 +132,18 @@ export default function Home() {
         <div className={styles.modal}>
           <div className={styles.modalTitle}>
             <CheckIcon />
-            <h1>Formas de contato</h1>
+            <h1>Contact Forms</h1>
           </div>
 
           <div className={styles.contacts}>
             <div className={styles.modalSettings}>
               <Pin />
-              <Text>Através do endereço: Rua das Flores nº 82 lote 07</Text>
+              <Text>Through the address: Rua das Flores nº 82 lote 07</Text>
             </div>
 
             <div className={styles.modalSettings}>
               <Telefone />
-              <Text>Telefones: (11) 9 9292-9711 / (11) 9 81815251</Text>
+              <Text>Phones: (11) 9 9292-9711 / (11) 9 81815251</Text>
             </div>
 
             <div className={styles.modalSettings}>
@@ -157,7 +157,7 @@ export default function Home() {
               className={styles.btnModal}
               onClick={() => setModalOpened(false)}
             >
-              Retornar
+              Turn back
             </Button>
             <Logo />
           </div>
@@ -167,12 +167,13 @@ export default function Home() {
         <div>
           <div className={styles.paymentModal}>
             <h1>
-              Obrigado pelo interesse e contribuição <br /> em nosso Projeto
+              Thank you for your interest and contribution <br /> in our Project
             </h1>
             <Text fontWeight={600}>
-              Em breve você receberá uma mensagem de texto em <br />
-              seu celular para finalizar o pagamento <br />
-              de sua doação.
+              You will shortly receive a text message at
+              <br />
+              your cell phone to complete the payment <br />
+              of your donation.
             </Text>
           </div>
           <Image alt="DogHappy" src={HappyDog} />
